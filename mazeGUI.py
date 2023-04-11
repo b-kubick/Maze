@@ -3,7 +3,6 @@ import random
 
 from mazeSolver import MazeSolver
 
-
 class MazeGUI:
     def __init__(self, maze, solver, cell_size=30):
         self.maze = maze
