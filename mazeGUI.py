@@ -16,15 +16,11 @@ class MazeGUI:
         
         # Set maximum/minimum window size
         self.root.minsize(700, 600)
-        self.root.maxsize(700, 600)
         
         # Create a BooleanVar to track whether the maze has been solved
         self.solved = tk.BooleanVar()
         self.solved.set(False)
-        # Calculate the width and height of the canvas based on the maze size and cell size
-        canvas_width = maze.width * cell_size
-        canvas_height = maze.height * cell_size
-        
+    
         # Calculate the screen dimensions
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
