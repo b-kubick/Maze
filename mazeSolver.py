@@ -8,6 +8,7 @@ class MazeSolver:
         self.width = maze.width
         self.predecessor = [[None] * self.width for _ in range(self.height)]
         
+        
     # calculates the manhattan distance between the current cell(row, col) and the goal cell(goal_row, goal_col)
     def heuristic(self, row, col):
         goal_row, goal_col = self.maze.goal

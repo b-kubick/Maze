@@ -10,6 +10,7 @@ def main(x,y):
     # Create a maze with default width of 15 and random start and goal points
     maze = Maze(x, y, start, goal)
     solver = MazeSolver(maze)
+    
     # Create a MazeGUI object with the default maze, solver, and cell size
     gui = MazeGUI(maze, solver)
 
